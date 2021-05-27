@@ -1,7 +1,8 @@
-const path = require('path')
-
+const path = require('path');
+const htmlWebpackPlugin = require('html-webpack-plugin') ;
 
 module.exports = {
+    mode:'development',
     entry: path.resolve(__dirname, 'src' , 'index.jsx'),
     output: {
         path :path.resolve(__dirname, 'dist'),
@@ -10,6 +11,11 @@ module.exports = {
     resolve: {
         extensions: ['.js' , '.jsx'],
     },
+    plugins:[
+        new htmlWebpackPlugin({
+            template: path.join(__dirname, 'public' , 'index.html')
+        })
+    ],
     module: {
         rules: [
             {

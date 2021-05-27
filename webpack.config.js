@@ -23,11 +23,17 @@ module.exports = {
         contentBase: path.join(__dirname, 'public'),
     },
     module: {
-        rules: [{
-            test: /\.jsx$/,
-            exclude: /node_modules/,
-            use: 'babel-loader',
-        }],
+            rules: [{
+                test: /\.jsx$/,
+                exclude: /node_modules/,
+                use: 'babel-loader',
+        },
+            {
+                test: /\.css$/,
+                exclude: /node_modules/,
+                use: ['style-loader', 'css-loader'],
+            }
+        ],
     }
 
 }

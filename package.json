@@ -4,6 +4,10 @@
   "main": "index.js",
   "author": "Hugo Alves Varella <71407198+Hugovarellaa@users.noreply.github.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "webpack serve",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"

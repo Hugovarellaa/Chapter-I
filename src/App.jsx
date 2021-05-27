@@ -1,5 +1,5 @@
 export function App(){
     return (
-        <h1> Agora sim aprendi o hello world</h1>
+        <h1> Agora sim aprendi</h1>
     )
 }

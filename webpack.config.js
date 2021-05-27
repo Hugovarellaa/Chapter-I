@@ -16,6 +16,9 @@ module.exports = {
             template: path.join(__dirname, 'public' , 'index.html')
         })
     ],
+    devServer:{
+        contentBase : path.join(__dirname, 'public'),
+    },
     module: {
         rules: [
             {

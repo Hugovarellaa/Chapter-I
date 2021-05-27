@@ -1,7 +1,7 @@
-import './styles/global.css'
+import './styles/global.scss'
 
 export function App(){
     return (
-        <h1> Agora sim aprendi</h1>
+        <h1> Hello World </h1>
     )
 }

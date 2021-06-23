@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  display:flex;
+  display: flex;
   height: 100vh;
   background-color: var(--background);
 }
@@ -35,7 +35,7 @@ input,
 textarea {
   font-size: clamp(14px, 1.6rem, 2vw);
   font-family: 'Open Sans', sans-serif;
-  
+
 }
 
 .content {
@@ -100,12 +100,27 @@ button.outlined,
   color: var(--blue);
   border: .2rem solid var(--blue);
 }
+
+button.red,
+.button.red {
+  background-color: var(--gray-light);
+  color: var(--gray-dark);
+}
+
+button.gray,
+.button.gray {
+  background-color: var(--red);
+  color: var(--white);
+}
+
+
+/****** HEADER  ******/
 .content header {
   width: 80%;
   margin: 3.5rem auto;
 }
 
-.content header img{
+.content header img {
   width: 16.7rem;
   margin: 3.5rem auto;
 }

@@ -10,6 +10,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/room.css">
+  <link rel="stylesheet" href="./styles/modal.css">
   <!-- Fontes -->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500;600;700&display=swap"
     rel="stylesheet">
@@ -85,10 +86,10 @@
           <div class="question-wrapper">
             <div class="question-content">
               <div class="user">
-                <img src="assets/user.svg"  alt="Avatar">
+                <img src="assets/user.svg" alt="Avatar">
               </div>
               <div class="question">
-                <p>O que é javascript</p>
+                <p>O que é javascript
               </div>
             </div>
             <div class="action">
@@ -107,13 +108,18 @@
           <div class="question-wrapper">
             <div class="question-content">
               <div class="user">
-                <img src="assets/user.svg"  alt="Avatar">
+                <img src="assets/user.svg" alt="Avatar">
               </div>
               <div class="question">
-                <p>O que é Typescript</p>
+                <p>
+                  Voce ja sabe quais as bases voces precisa melhorar para alcançar o seu proximo nivel com maestriar?
+                  Voce ja sabe quais as bases voces precisa melhorar para alcançar o seu proximo nivel com maestriar?
+                  Voce ja sabe quais as bases voces precisa melhorar para alcançar o seu proximo nivel com
+                  maestriar?Voce ja sabe quais as bases voces precisa melhorar para alcançar o seu proximo nivel com
+                  maestriar?
+                </p>
               </div>
             </div>
-
             <div class="action">
               <a href="#" class="check">
                 <img src="assets/check.svg" alt="Marcar como lida">
@@ -125,7 +131,23 @@
               </a>
             </div>
 
+          </div>
 
+          <div class="question-wrapper read">
+            <div class="question-content">
+              <div class="user">
+                <img src="assets/user.svg" alt="Avatar">
+              </div>
+              <div class="question">
+                <p>O que é Typescript</p>
+              </div>
+            </div>
+            <div class="action">
+              <a href="#" class="delete">
+                <img src="assets/trash.svg" alt="Ecluir">
+                Excluir
+              </a>
+            </div>
           </div>
 
         </div>
@@ -133,6 +155,28 @@
     </main>
 
   </div>
+
+  <!------ MODAL-------->
+
+  <div class="modal-wrapper">
+    <div class="modal">
+      <h2>Excluir Pergunta</h2>
+      <p>Tem certeza que voce deseja excluir esta pergunta?</p>
+
+      <form action="#">
+        <label class="sr-only" for-id="password">Digite sua senha admin</label>
+        <input type="password" name="password" id="password" placeholder="Digite sua senha">
+
+        <div class="buttons">
+          <div class="button red" >Cancelar</div>
+          <button class="gray"> Sim, Excluir</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+
 </body>
 
 </html>

@@ -7,5 +7,15 @@ route.get('/', (request, response) => {
     response.render("index")
   )
 })
+route.get('/room', (request, response) => {
+  return (
+    response.render("room")
+  )
+})
+route.get('/create-pass', (resquest, response) => {
+  return (
+    response.render("create-pass")
+  )
+})
 
 module.exports = route

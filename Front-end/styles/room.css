@@ -102,7 +102,7 @@ question-form form textarea::placeholder {
 
 .question-wrapper .question-content {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 .question-wrapper .question-content .user{
   background: var(--blue);
@@ -112,10 +112,6 @@ question-form form textarea::placeholder {
 }
 .question-wrapper .question-content p{
   margin-left: 1.6rem;
-  word-break: break-word;
-  display: flex;
-  align-items: center;
-  min-height: 5.5rem;
 }
 
 .question-wrapper .action {
@@ -133,13 +129,4 @@ question-form form textarea::placeholder {
 }
 .question-wrapper .action > a + a{
   margin-left: 2.4rem;
-}
-
-/****** Question Read ******/
-
-.question-wrapper.read{
-  background-color: var(--gray-medium);
-}
-.question-wrapper.read .question-content .user{
-  background-color: var(--gray-blue);
 }

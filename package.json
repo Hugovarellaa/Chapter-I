@@ -1,0 +1,12 @@
+{
+  "name": "Discover",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Hugovarellaa/NLW-06-Discover.git",
+  "author": "Hugo Alves Varella <71407198+Hugovarellaa@users.noreply.github.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}

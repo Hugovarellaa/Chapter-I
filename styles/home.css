@@ -49,6 +49,7 @@ input {
   padding: 0 1.6rem;
   height: 5rem;
   border-radius: .8rem;
+  outline: none;
 
 }
 

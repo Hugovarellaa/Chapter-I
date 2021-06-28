@@ -49,7 +49,8 @@
   border: .2rem solid var(--gray-blue);
   padding: 1.6rem;
   border-radius: 0 .8rem .8rem .8rem;
-  margin: 1.6rem;
+  /* padding: 1.6rem; */
+  margin-bottom: 1.6rem;
 }
 
 
@@ -99,32 +100,50 @@
 
 .question-wrapper .question-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
-.question-wrapper .question-content .user{
+
+.question-wrapper .question-content .user {
   background: var(--blue);
   clip-path: circle();
   padding: 1.4rem;
-  
+
 }
 
-.question-wrapper .question-content p{
+.question-wrapper .question-content p {
   margin-left: 1.6rem;
+  display: flex;
+  align-items: center;
+  min-height: 5.5rem;
 }
+
 .question-wrapper .action {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
-.question-wrapper .action > a {
+.question-wrapper .action>a {
   display: flex;
   align-items: center;
-  
+
 }
-.question-wrapper .action > a > img{
+
+.question-wrapper .action>a>img {
   margin-right: .8rem;
 }
-.question-wrapper .action > a + a{
-  margin-left:2.4rem ;
+
+.question-wrapper .action>a+a {
+  margin-left: 2.4rem;
+}
+
+/* --------Question Read -------- */
+
+.question-wrapper.read {
+  background: var(--gray-medium);
+
+}
+
+.question-wrapper.read .question-content .user {
+  background: var(--gray-blue);
 }

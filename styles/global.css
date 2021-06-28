@@ -36,7 +36,7 @@ body {
   /* vw = view width - Tamanho da largura - % */
   width: 100vw;
   background-color: var(--background);
-  display:flex;
+  display: flex;
 
 
 }
@@ -98,7 +98,7 @@ button:hover,
   filter: brightness(1.2);
 }
 
-button>img .button {
+button>img, .button>img {
   margin-right: 1rem;
   width: 2rem;
 }

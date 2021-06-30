@@ -6,3 +6,4 @@ route.get('/room', (request, response) => response.render('room.ejs'))
 route.get('/create-pass', (request, response) => response.render('create-pass'))
 
 module.exports = route
+

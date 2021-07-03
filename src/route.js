@@ -9,8 +9,8 @@ route.get('/create-pass', (request, response) => response.render('index' , {page
 
 route.get('/room/:room', (request, response) => response.render('room.ejs'))
 
-route.post('/room/:room/:question/:action' , questionController.index)
-route.post('/room/create', RoomController.create)
+route.post('/question/:room/:question/:action' , questionController.index)
+route.post('/create-room', RoomController.create)
 
 module.exports = route
 

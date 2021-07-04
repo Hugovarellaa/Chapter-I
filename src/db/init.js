@@ -21,6 +21,3 @@ const initDb = {
 }
 
 initDb.init();
-
-
-

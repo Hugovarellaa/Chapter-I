@@ -32,3 +32,57 @@
   width: 2rem;
   height: 2rem;
 }
+
+/* Question Form */
+
+#question-form h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8rem;
+  color: var(--black);
+  font-weight: 700;
+  line-height: 4.2rem;
+  margin-bottom: 2.4rem;
+}
+
+#question-form form {
+  border: 0.2rem solid var(--gray-blue);
+  padding: 1.6rem;
+  border-radius: 0 0.8rem 0.8rem 0.8rem;
+}
+
+#question-form form textarea {
+  resize: none;
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+}
+
+#question-form form textarea::placeholder {
+  color: var(--gray-blue);
+}
+
+#question-form form footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#question-form form footer > div {
+  display: flex;
+  align-items: center;
+  color: var(--icons-details);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+#question-form form footer > div img {
+  margin-right: 0.93rem;
+}
+
+#question-form form footer button {
+  height: auto;
+  line-height: 2.4rem;
+  padding: 0.8rem 2.4rem;
+}

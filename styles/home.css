@@ -14,7 +14,7 @@ header {
 #bg {
   grid-area: left;
   background: url("../assets/images/home-bg-img.svg") no-repeat top/contain;
-  height: 100vh;
+  height: calc(100vh - 11.4rem);
 }
 
 main {

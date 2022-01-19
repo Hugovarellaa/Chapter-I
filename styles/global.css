@@ -67,6 +67,11 @@ button {
   margin: 3.5rem auto;
 }
 
+main .container {
+  width: min(36.3rem, 100%);
+  margin-top: -12rem;
+}
+
 input,
 button,
 .button {

@@ -57,6 +57,16 @@ button {
   border-width: 0;
 }
 
+.content header {
+  width: 52%;
+}
+
+.content header img {
+  display: block;
+  width: 16.7rem;
+  margin: 3.5rem auto;
+}
+
 input,
 button,
 .button {
@@ -83,4 +93,17 @@ button,
 button:hover,
 .button:hover {
   filter: brightness(1.2);
+}
+
+button > img,
+.button > img {
+  margin-right: 1rem;
+  width: 2rem;
+}
+
+button.outlined,
+.button.outlined {
+  background-color: var(--white);
+  color: var(--blue);
+  border: 0.2rem solid var(--blue);
 }

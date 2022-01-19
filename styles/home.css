@@ -14,6 +14,7 @@ header {
 #bg {
   grid-area: left;
   background: url("../assets/images/home-bg-img.svg") no-repeat top/contain;
+  height: 100vh;
 }
 
 main {
@@ -26,7 +27,7 @@ main .container {
   width: min(36.3rem, 100%);
 }
 
-main .container h2 {
+main h2 {
   font-family: "Poppins", sans-serif;
   color: var(--black);
   font-size: clamp(20px, 5vw, 2.8rem);
@@ -34,10 +35,15 @@ main .container h2 {
   margin-bottom: 2.4rem;
 }
 
-main .container section form input {
+input {
   border: 0.2rem solid var(--gray-blue);
   border-radius: 0.4rem;
   padding: 0 1.6rem;
   height: 5rem;
+}
+
+input,
+button {
+  width: 100%;
   margin-bottom: 1.8rem;
 }

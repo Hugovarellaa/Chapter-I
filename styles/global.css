@@ -58,7 +58,7 @@ button {
 }
 
 .content header {
-  width: 52%;
+  width: 30%;
 }
 
 .content header img {
@@ -106,4 +106,27 @@ button.outlined,
   background-color: var(--white);
   color: var(--blue);
   border: 0.2rem solid var(--blue);
+}
+
+/* create balls */
+
+.ball {
+  background: var(--blue);
+  position: fixed;
+  width: 21.2rem;
+  height: 21.2rem;
+  clip-path: circle();
+  opacity: 0.3;
+}
+
+.ball.top {
+  width: 63.3rem;
+  height: 63.3rem;
+  top: -45rem;
+  right: -35rem;
+}
+
+.ball.bottom {
+  bottom: -15rem;
+  right: 5.6rem;
 }

@@ -1,45 +1,45 @@
 * {
-  padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  padding: 0;
+  border: none;
   text-decoration: none;
-}
-
-:root {
-  --black: #0d114f;
-  --white: #fafafa;
-  --red: #e83f5b;
-  --blue: #3485ff;
-  --blue-light: #e0ecff;
-  --background: #fbfcff;
-  --overlay: #040911;
-  --icons-details: #a5b0c1;
-
-  --gray-dark: #4d5e77;
-  --gray-blue: #a1b2cd;
-  --gray-light: #e5eaf1;
-  --gray-check: #eaecf2;
-
-  --blue-hover: #5699ff;
-  --red-hover: #ea4b65;
+  box-sizing: border-box;
 }
 
 html {
-  font-size: 62.5%;
+  --black: #0d114f;
+  --white: #fafafa;
+  --red: #e83f5b;
+  --light-blue: #e0ecff;
+  --blue: #3485ff;
+  --background: #f6faff;
+  --overlay: #040911;
+  --icons-details: #a5b0c1;
+
+  --grey-dark: #4d5e77;
+  --grey-blue: #a1b2cd;
+  --grey-light: #e5eaf1;
+  --grey-medium: #eaecf2;
+
+  /* 1rem = 16px (User Agent) = 100% (User Agent) */
+  font-size: 62.5%; /* 10px */
 }
 
 body {
+  display: flex;
   height: 100vh;
   background: var(--background);
 }
 
 body,
+button,
 input,
-select,
-textarea,
-button {
+textarea {
+  /* intervalo de tamanho */
   font-size: clamp(14px, 1.6rem, 2vw);
+
   font-family: "Open Sans", sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
 }
 
 .content {
@@ -49,63 +49,40 @@ button {
 
 .sr-only {
   position: absolute;
-  height: -1px;
+  height: 1px;
   width: 1px;
+  padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip-path: (0, 0, 0, 0);
+  clip-path: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
 }
 
-.content header {
-  width: 30%;
-}
-
-.content header img {
-  display: block;
-  width: 16.7rem;
-  margin: 3.5rem auto;
-}
-
-main .container {
-  width: min(36.3rem, 100%);
-  margin-top: -12rem;
-}
-
+/*--------- input and buttons*/
 input,
 button,
 .button {
-  border: 0.2rem solid var(--gray-blue);
+  border-radius: 0.8rem;
   height: 5rem;
-  border-radius: 0.4rem;
-}
-
-button.red,
-.button.red {
-  background: var(--red);
-  color: var(--white);
-}
-
-button.gray,
-.button.gray {
-  background: var(--gray-light);
-  color: var(--gray-dark);
 }
 
 button,
 .button {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins";
   font-weight: 500;
   line-height: 0;
-  background-color: var(--blue);
-  color: var(--white);
 
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+
+  background: var(--blue);
+  color: var(--white);
+
   transition: filter 0.2s;
+
+  cursor: pointer;
 }
 
 button:hover,
@@ -121,30 +98,30 @@ button > img,
 
 button.outlined,
 .button.outlined {
-  background-color: var(--white);
+  background: var(--white);
   color: var(--blue);
   border: 0.2rem solid var(--blue);
 }
 
-/* create balls */
-
-.ball {
-  background: var(--blue);
-  position: fixed;
-  width: 21.2rem;
-  height: 21.2rem;
-  clip-path: circle();
-  opacity: 0.3;
+button.red,
+.button.red {
+  background: var(--red);
+  color: var(--white);
 }
 
-.ball.top {
-  width: 63.3rem;
-  height: 63.3rem;
-  top: -45rem;
-  right: -35rem;
+button.grey,
+.button.grey {
+  background: var(--grey-light);
+  color: var(--grey-dark);
 }
 
-.ball.bottom {
-  bottom: -15rem;
-  right: 5.6rem;
+/*** HEADER ****/
+
+.content header {
+  width: 80%;
+  margin: 3.5rem auto;
+}
+
+.content header img {
+  width: 16.7rem;
 }

@@ -1,9 +1,10 @@
-#room {
+.content {
   max-width: min(112rem, 90%);
 }
 
 #room header {
   width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,13 +20,13 @@
 }
 
 #room header .buttons .button:nth-child(1) img {
-  margin-left: 1.16rem;
+  margin-left: 1rem;
   width: 2rem;
   height: 2rem;
 }
 
 #room header .buttons .button:nth-child(2) {
-  padding: 1.3rem 3.6rem;
+  padding: 1.3rem 3.2rem;
 }
 
 #room header .buttons .button:nth-child(2) img {
@@ -33,34 +34,36 @@
   height: 2rem;
 }
 
-/* Question Form */
-
+/*** QUESTION FORM ***/
 #question-form h2 {
   font-family: "Poppins", sans-serif;
   font-size: 2.8rem;
   color: var(--black);
   font-weight: 700;
   line-height: 4.2rem;
+
   margin-bottom: 2.4rem;
 }
 
 #question-form form {
-  border: 0.2rem solid var(--gray-blue);
+  border: 0.2rem solid var(--grey-blue);
   padding: 1.6rem;
   border-radius: 0 0.8rem 0.8rem 0.8rem;
+
   margin-bottom: 1.6rem;
 }
 
 #question-form form textarea {
   resize: none;
-  border: none;
   background: transparent;
-  outline: none;
+
   width: 100%;
+
+  outline: none;
 }
 
 #question-form form textarea::placeholder {
-  color: var(--gray-blue);
+  color: var(--grey-blue);
 }
 
 #question-form form footer {
@@ -72,44 +75,48 @@
 #question-form form footer > div {
   display: flex;
   align-items: center;
+
   color: var(--icons-details);
   font-family: "Poppins", sans-serif;
-  font-size: 1.4rem;
   font-weight: 400;
+  font-size: 1.4rem;
 }
 
 #question-form form footer > div img {
-  margin-right: 0.93rem;
+  margin-right: 0.9rem;
 }
 
 #question-form form footer button {
   height: auto;
-  line-height: 2.4rem;
   padding: 0.8rem 2.4rem;
+  line-height: 2.4rem;
 }
 
-/* Questions */
-
+/******* Questions *****/
 .question-wrapper {
-  background: var(--blue-light);
+  background: var(--light-blue);
   margin-bottom: 0.8rem;
   border-radius: 0 0.8rem 0.8rem 0.8rem;
   padding: 2.4rem;
 }
 
-.question-wrapper .queston-content {
+.question-wrapper .question-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.question-wrapper .queston-content .user {
+.question-wrapper .question-content .user {
   background: var(--blue);
   clip-path: circle();
   padding: 1.4rem;
 }
 
-.question-wrapper .queston-content .user {
-  margin-right: 1.6rem;
+.question-wrapper .question-content p {
+  margin-left: 1.6rem;
+  word-break: break-word;
+  display: flex;
+  align-items: center;
+  min-height: 5.5rem;
 }
 
 .question-wrapper .actions {
@@ -118,14 +125,9 @@
   justify-content: flex-end;
 }
 
-.question-wrapper .actions a {
+.question-wrapper .actions > a {
   display: flex;
   align-items: center;
-}
-
-.question-wrapper .actions p {
-  margin-left: 1.6rem;
-  word-break: break-word;
 }
 
 .question-wrapper .actions > a > img {
@@ -136,14 +138,33 @@
   margin-left: 2.4rem;
 }
 
-/* Question read */
-
+/***** Question Read ****/
 .question-wrapper.read {
-  background-color: var(--gray-check);
+  background: var(--grey-medium);
 }
 
-.question-wrapper.read .queston-content .user {
-  background: var(--gray-blue);
+.question-wrapper.read .question-content .user {
+  background: var(--grey-blue);
 }
 
-/* Modal */
+/*** No Questions   **/
+.no-questions {
+  text-align: center;
+  margin-top: 5.2rem;
+}
+.no-questions img {
+  max-width: 100%;
+  margin-bottom: 1.2rem;
+}
+.no-questions p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.no-questions p + p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 1.3rem;
+  line-height: 1.9rem;
+}
